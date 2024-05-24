@@ -18,7 +18,7 @@ jobs:
           cache: "npm"
         
       - name: Install Netlify
-        run: yarn add netlify-cli@17.10.1
+        run: yarn add netlify-cli
 
       - name: Install Dependencies
         run: yarn install
