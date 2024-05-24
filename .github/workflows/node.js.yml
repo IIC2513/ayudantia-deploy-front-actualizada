@@ -33,4 +33,6 @@ jobs:
             --dir dist \
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_API_TOKEN }}
-            --prod
+            
+      - name: Deploy to Production
+        run: netlify deploy --prod
