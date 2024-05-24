@@ -10,7 +10,7 @@ jobs:
     steps:
 
       - name: Install Netlify
-        run: cd vite-project && yarn install netlify-cli@17.10.1 -g
+        run: yarn install netlify-cli@17.10.1 -g
 
       - name: Install Dependencies
         run: yarn install
