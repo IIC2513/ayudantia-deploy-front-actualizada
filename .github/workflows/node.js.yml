@@ -8,16 +8,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Repository Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
       - name: Install Netlify
-        run: yarn install netlify-cli@17.10.1 -g
+        run: cd vite-project && yarn install netlify-cli@17.10.1 -g
 
       - name: Install Dependencies
         run: yarn install
